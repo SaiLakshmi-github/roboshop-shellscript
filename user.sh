@@ -87,3 +87,4 @@ VALIDATE $? "Installing mongo client"
 mongo --host mongodb.skilldevops.online </app/schema/user.js &>>$LOGFILE
 
 VALIDATE $? "loading user data into mongodb"
+
