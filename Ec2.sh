@@ -14,3 +14,4 @@ Instance_Type="t2.micro"
 fi
 echo "creating $i instance"
 aws ec2 run-instances --image-id $Image_id --instance-type $Instance_Type --security-group-ids $Security_id --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]"
+done
